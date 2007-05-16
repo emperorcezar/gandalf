@@ -1,0 +1,10 @@
+interrupt (5, 82800)
+random genre soundtrack
+random genre rock
+file myplaylist.pls
+interrupt (6, 0)
+random genre Rock
+random genre Rock
+interrupt (6, 3600)
+random genre Soundtrack
+random genre Something

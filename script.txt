@@ -1,0 +1,4 @@
+random genre "Blues"
+playlist "/home/mp3/penis.pls"
+song "/home/mp3/song.mp3"
+interupt Monday 12:00

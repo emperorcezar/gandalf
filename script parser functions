@@ -1,0 +1,78 @@
+"""
+Script.py
+
+By Tim Saylor
+
+Implements a script object that parses a script and makes 
+it available in segment objects.  It can also be used to 
+generate a new script file from rules generated at runtime.
+"""
+
+class Script:
+    def __init__(self, filename):
+        """
+        Takes a script file, parses it into segments, and 
+        stores the rules and times for retrieval.
+        """
+
+    def getSegment(self, index=-9999, time="Noday -9999"):
+        """
+        Returns a segment object with the given index or 
+        given time.  One of these values is required.  If 
+        both are given, index is given precedence.
+        """
+
+    def getNextSegment(self):
+        """
+        Returns the next segment from the script in a 
+        segment object.
+        """
+        
+    def addSegment(self, time, rules):
+        """
+        Adds a segment to the script, then modifies 
+        the current segment reference to ensure that 
+        it still points to the same segment.
+        """
+
+    def addSegmentObject(self, segment):
+        """
+        Adds a segment to the script, then modifies 
+        the current segment reference to ensure that 
+        it still points to the same segment.
+
+        This method takes a segment object as its parameter
+        """
+
+    def deleteSegment(self, index=-9999, time="Noday -9999"):
+        """
+        Deletes a segment to the script, then modifies the 
+        current segment reference to ensure that it still 
+        points to the same segment.
+        """
+    
+    def writeScript(self, filename):
+        """
+        Writes out the current script to a specified file.
+        """
+
+===========
+
+class Segment:
+    def __init__(self, day, start, end, rules):
+
+    def getDuration(self):
+        
+    def getTimeLeft(self):
+        
+    def getStart(self):
+
+    def getEnd(self):
+        
+    def getRules(self):
+
+    def getNextRule(self):
+        
+    def setNextRule(self, rule, overwrite=0):
+        
+    def setStart(self, newstart):

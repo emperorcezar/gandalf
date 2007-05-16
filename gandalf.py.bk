@@ -1,0 +1,34 @@
+#!/usr/bin/python
+
+'''
+Author: Adam Jenkins
+This is the main file for gandalf
+'''
+#import includes.database as database
+#import includes.logging as log
+import includes.Scheduler as Scheduler
+import sys
+import os
+
+#os.setpgid(0,0)
+
+'''
+***MAIN SECTION OF PROGRAM
+'''
+
+#Init the Gandalf system using the path from the console parameters
+
+print "GANDALF"
+f = file('/var/log/gandalf.log','w')
+sys.stdout = f
+
+schedule = Scheduler.Scheduler(sys.argv[1])
+
+
+
+while 1:
+	file = schedule.getNextFile()
+	if file == None:
+		print "Error: Could not get the next song"
+	os.spawnv(os.P_WAIT,'/usr/bin/mpg321',['mpg321','-o','oss','-a','/dev/audio',file])
+    #mpg321 -o oss -a /dev/audio stationid.mp3

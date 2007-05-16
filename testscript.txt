@@ -1,0 +1,16 @@
+interrupt 0 0000
+    random genre "Heavy Metal" repeat
+    random genre "Heavy Metal"
+interrupt 1 0000
+    random genre "Heavy Metal" repeat
+interrupt 2 0000
+    random genre "Heavy Metal" repeat
+interrupt 3 0000
+    random genre "Heavy Metal" repeat
+interrupt 4 0000
+    random genre "Heavy Metal" repeat
+interrupt 5 0000
+    random genre "Heavy Metal" repeat
+interrupt 6 0000
+    random genre "Heavy Metal" repeat
+

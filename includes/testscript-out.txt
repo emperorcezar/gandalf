@@ -1,0 +1,5 @@
+interrupt (0, 0)
+random genre "Heavy Metal" repeat
+random genre "Heavy Metal"
+interrupt (1, 0)
+random genre "Heacy Metal" repeat
